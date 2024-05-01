@@ -3,90 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kszysztow byczuk</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-            .bottom{
-                width: calc(100% - 4);
-                height: calc(33vh - 4px);
-                top: 66vh;
-                border-style: solid;
-                border-width: 2px;
-            }
-    
-            .AM{
-                width: 33%;
-                left: 0;
-                height: calc(33vh + 3px);
-                border-style: solid;
-                border-width: 0px;
-                background-color: rgb(173, 164, 164);
-                position: absolute;
-                float: left;
-            }
-            .AINP{
-                width: 33%;
-                left: 33%;
-                height: calc(33vh + 3px);
-                border-style: solid;
-                border-width: 0px;
-                background-color: whitesmoke;
-                position: absolute;
-                float: left;
-            }
-            .AMT{
-                width: calc(33% + 19px);
-                left: 66%;
-                height: calc(33vh + 3px);
-                border-style: solid;
-                border-width: 0px;
-                background-color: rgb(173, 164, 164);
-                position: absolute;
-                float: left;
-            }
-            .semi_header{
-                height: calc(33vh * 0.25);
-                border-style: solid;
-                border-width: 1px;
-                background-color: rgb(39, 88, 133);
-            }
-            .content{
-                height: calc(33vh * 0.75);
-                border-style: solid;
-                border-width: 1px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="top"></div>
-    
-        <div class="mid"></div>
-    
-        <div class="bottom">
-            <div class="AM">
-                <div class="semi_header">
-    
-                </div>
-                <div class="content">
-    
-                </div>
-            </div>
-            <div class="AINP">
-                <div class="semi_header">
-    
-                </div>
-                <div class="content">
-                    
-                </div>
-            </div>
-            <div class="AMT">
-                <div class="semi_header">
-    
-                </div>
-                <div class="content">
-                    
-                </div>
-            </div>
-        </div>
-        </style>
+        body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+.dashboard{
+    background-color:#0c4a6e;
+    height: 100vh;
+    width: 400px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+.dashG img{
+    border-radius: 30px;
+    border:solid 2px black;
+    margin: 50px;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+    color: white;
+}
+
+.dashS{
+    padding: 0px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+.dashS img{
+    margin-left: 30px;
+}
+
+
+
+button{
+    text-align: left;
+    border:none;
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+    background-color: #0c4a6e;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #91b9d1;
+}
+
+button:active{
+    background-color: #b7d3e4;
+}
+
+.dashS img{
+    height: 50px;
+    width: auto;
+
+}
+
+
+
+    </style>
 </head>
 <body>
+
+        <div class="dashboard">
+            <div class="dashG">
+                <img src="TataRoberta.jpg">
+
+            </div>
+            <div class="dashS">
+                <img src="img/home-outline.svg">
+                <button onclick="home">Home</button>
+                <img src="img/card-account-details-outline.svg">
+                <button onclick="profile">My self</button>
+                <img src="img/message-outline.svg">
+                <button onclick="Messages">Illustation in physics </button>
+                <img src="img/clock-time-eight-outline.svg">
+                <button onclick="History">My teaching</button>
+                
+</body>
+</html>

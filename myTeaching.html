@@ -6,9 +6,23 @@
     <title>Krzysztof Byczuk</title>
     <link rel="stylesheet" href="style.css">
     <style>
+html {
+overflow: hidden; 
+overflow-x: hidden; 
+overflow-y: hidden; 
+}
         body{
     margin: 0;
-    background-color: whitesmoke;
+    background-color: rgb(225, 225, 225);
+}
+
+a{
+    text-decoration: none;
+    color:#0c4a6e;
+}
+
+.web{
+    display: flex;
 }
 .dashboard{
     background-color:#0c4a6e;
@@ -30,7 +44,7 @@
 }
 
 .dashS{
-    padding: 0px;
+
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -68,43 +82,149 @@ button:active{
 
 }
 
+.Home{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    background-color: rgb(225, 225, 225);
+}
+
+.HomeText{
+
+    color: black;
+    font-size: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 3%;
+    font-size:30px;
+    border-bottom: solid 1px black;
+}
 
 
     </style>
 </head>
 <body>
 
+    <div class="web">
         <div class="dashboard">
             <div class="dashG">
                 <img src="TataRoberta.jpg">
 
             </div>
             <div class="dashS">
-                <img src="img/home-outline.svg">
+                <img src="home-outline.svg">
                 <a href="StronaProfesora.html">
                     <button>
-                        Home
+                        Home                    
                     </button>
                 </a>
-                <img src="img/card-account-details-outline.svg">
-                <a href="mySelf.html">
+                <img src="card-account-details-outline.svg">
+                <a href="mySelf.html">    
                     <button>
-                        My Self
+                        My self
                     </button>
                 </a>
-                <img src="img/message-outline.svg">
+                <img src="illustrations-in-physics.svg">
                 <a href="illustration.html">
                     <button>
-                        Illustration
+                        Illustation in physics 
                     </button>
                 </a>
-                <img src="img/clock-time-eight-outline.svg">
-                <a href="myTeaching.html">
+                <img src="teching.svg">
+                <a href="myTeaching.html">    
                     <button>
-                        My Teaching
+                        My teaching
                     </button>
                 </a>
             </div>
         </div>
+        <div class="Home">
+     
+            <h3>
+                About my teaching
+     </h3>
+ 
+ 
+ <A HREF="termodynamika_fiz-stat_R_2023-24.pdf"> 
+     <button><b>Termodynamika i fizyka statystyczna R 2023/24</b></button>
+ </a>
+ 
+ <A HREF="http://www.fuw.edu.pl/~zsms">
+     <button class="blackone"><b>● razem z Radkiem Przenioslo</b></button>
+ </a>
+ 
+ <A HREF="advanced-graguate-quantum-mechanics-2023-24.pdf"> 
+     <button><b>Advanced Graduate Quantum Mechanics 2023/24  </b></button>
+ </a>
+ 
+ <A HREF="topics-in-many-body-theory-2022-23.pdf"> 
+     <button><b>Topics in Many Body Theory 2022/23</b></button>
+ </a>
+ 
+ <A HREF="http://www.fuw.edu.pl/~pjak">
+     <button class="blackone"><b>● lectured with Pawel Jakubczyk</b></button>
+ </a>
+ 
+ <A HREF="TMBT_lectures_2022_23.html"> 
+     <button class="blackone"><b>● Lecture and tutorial notes</b></button>
+ </a>
+ 
+ <A HREF="advanced-graguate-quantum-mechanics-2022-23.pdf"> 
+     <button><b>Advanced Graduate Quantum Mechanics 2022/23  </b></button>
+ </a>
+ 
+ <A HREF="statistical-physics-a-2022-23.pdf"> 
+     <button><b>Statistical Physics A 2022/23  </b></button>
+ </a>
+ 
+ <A HREF="advanced-graguate-quantum-mechanics-2021-22.pdf"> 
+     <button><b> Advanced Graduate Quantum Mechanics 2021/22  </b></button>
+ </a>
+ 
+ <A HREF="statistical-physics-a-2021-22.pdf"> 
+     <button><b> Statistical Physics A 2021/22  </b></button>
+ </a>
+ 
+ <A HREF="thermodynamics-basics.pdf"> 
+     <button class="blackone"><b>● Notes on elements of thermodynamics</b></button>
+ </a>
+ 
+ <A HREF="topics-in-many-body-theory-2020-21.pdf"> 
+     <button><b>Topics in Many Body Theory 2020/21</b></button>
+ </a>
+ 
+ <A HREF="http://www.fuw.edu.pl/~pjak">
+     <button class="blackone"><b>● lectured with Pawel Jakubczyk</b></button>
+ </a>
+ 
+ <A HREF="TMBT_lectures.html"> 
+         <button class="blackone"><b>● Lecture and tutorial notes</b></button>
+ </a>
+ 
+ <A HREF="advanced-graguate-quantum-mechanics-2020-21.pdf"> 
+     <button><b>Advanced Graduate Quantum Mechanics 2020/21</b></button>
+ </a>
+ 
+ <A HREF="AGQM_lectures.html"> 
+     <button class="blackone"><b>● Lecture notes</b></button>
+ </a>
+ 
+ <A HREF="AGQM-problems.pdf"> 
+     <button class="blackone"><b>● List of homework problems</b></button>
+ </a>
+ 
+ <A HREF="statistical-physics-a-2020-21.pdf"> 
+     <button><b> Statistical Physics A 2020/21  </b></button>
+ </a>
+  
+  <A HREF="SPA_lectures.html"> 
+     <button class="blackone"><b>● Lecture notes</b></button>
+ </a>
+ 
+     </div>
+    </div>
 </body>
 </html>

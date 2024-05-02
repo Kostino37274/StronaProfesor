@@ -6,9 +6,19 @@
     <title>Kszysztow byczuk</title>
     <link rel="stylesheet" href="style.css">
     <style>
+            html {
+overflow: hidden; 
+overflow-x: hidden; 
+overflow-y: hidden; 
+}
         body{
     margin: 0;
     background-color: rgb(225, 225, 225);
+}
+
+a{
+    text-decoration: none;
+    color:#0c4a6e;
 }
 
 .web{
@@ -34,7 +44,7 @@
 }
 
 .dashS{
-    padding: 0px;
+
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -73,7 +83,8 @@ button:active{
 }
 
 .Home{
-
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     margin-left: auto;
@@ -81,33 +92,59 @@ button:active{
 }
 
 .HomeText{
-    margin: 50px;
+
+    color: black;
+    font-size: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 3%;
     font-size:30px;
-    padding: 10px;
     border-bottom: solid 1px black;
 }
 
 .topPhoto img{
-    height: 300px;
-    width: 100%;
+    margin: 10px;
+    height: 250px;
+    width: 99%;
+    border-radius: 15px;
 }
 
 .informacjeHome{
-    margin-left: 30px;
-    margin-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 35px;
+    margin-right: 35px;
     font-size: 20px;
 }
 
 .kontakt{
-    display: flex;
+    font-size: 20px;
+    background-color: #0c4a6e;
     text-align: center;
-    justify-content: center;
-    margin-top:10%;
-    margin-left:70%;
-    border: #0c4a6e solid 1px;
-    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 450px;
+    color: white;
+    border-radius: 15px;
+    margin-left:calc(50% - 225px) ;
+    margin-top: 5vh;
+
+    box-shadow: rgba(128, 128, 128, 0.5) 5px 5px;
 }
 
+.copyright{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5.8vh;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+    background-color: rgba(128, 128, 128, 0.5);
+    
+  }
+  .copytext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    text-align: center;
+  }
     </style>
 </head>
 <body>
@@ -130,13 +167,13 @@ button:active{
         </div>
         <div class="Home">
             <div class="topPhoto">
-                <img src="TataRoberta.jpg">;
+                <img src="Headerprof.webp">
             </div>
             <div class="HomeText">
                 <h3>prof. dr hab. Krzysztof Byczuk</h3><br>
 
-    Professor at University of Warsaw, <a href="https://www.fuw.edu.pl/"><strong>Faculty of Physics</strong><a>
-    Director of the <a href="http://ift.fuw.edu.pl/"><strong>of Theretical Physics</strong> </a>
+    Professor at University of Warsaw, <a href="https://www.fuw.edu.pl/"><strong>Faculty of Physics</strong></a>
+    <br>Director of the of<a href="http://ift.fuw.edu.pl/"><strong> Theretical Physics</strong> </a>
             </div>
             <div class="informacjeHome">
                 Zainteresowania naukowe: Kwantowe układy wielu cząstek, 
@@ -159,7 +196,12 @@ button:active{
                 Office: A 5.12<br>
                 Phone Phone: (48) 22 55 32 912<br>
                 Phone Fax: (48) 22 55 32 995<br>
-                Mailbox Email: Krzysztof.Byczuk@fuw.edu.pl<br>
+                Mailbox Email: Krzysztof.Byczuk@fuw.edu.pl<br><br><br>
+            </div>
+            <div class="copyright">
+                <div class="copytext">
+                    <h4>Copyright © HeavenSide 2024</h4>
+                </div>
             </div>
         </div>
     </div>

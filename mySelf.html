@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,23 +115,33 @@ button:active{
 }
 
 
-.mySlides {display: none;}
-img {
-    vertical-align: middle;
+.mySlides {
+    display: flex;
+    height: 1000px;
 }
 
-.info{
+.mySlides:first-child {
+    display: block; /* Wyświetla pierwszy slajd */
+}
+
+.mySlides:checked + .info {
+    display: block; /* Wyświetla info, gdy odpowiadający slajd jest zaznaczony */
+}
+
+.info {
     display: none;
-    width: 30%;
-    height: 30vh;
+    width: 300px;
+    height: 350px;
     position: absolute;
     margin-left: 5%;
     background-color: rgb(159, 151, 151);
-    top: 45vh;
+
+    bottom: 28vh;
+
 }
 
 .info p{
-    margin-top: 4vh;
+    margin-top: 50px;
     margin-left: 5%;
     animation-name: animacja_tekst;
     animation-duration: 2s;
@@ -141,7 +152,7 @@ img {
 }
 /* Slideshow container */
 .slideshow-container {
-  width: 60%;
+  width: 1000px;
   margin-top: 10vh;
   margin-left: 10%;
   margin-right: 10%;
@@ -232,10 +243,10 @@ img {
 }
 @keyframes animacja_tekst {
     0%{
-        margin-top: 15vh;
+        margin-top: 200px;
     }
     100%{
-        margin-top: 4vh
+        margin-top: 50px;
     }
     
 }

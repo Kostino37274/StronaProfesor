@@ -132,6 +132,35 @@ button{
     100%{width: 400px;}
 }
 
+.buttonpage button{
+    box-shadow: 3px 3px rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    margin-top: 6px;
+    font-size: 18px;
+    height: 3vh;
+
+}
+@keyframes animatedLeft{
+    from{
+        margin-right: 200px;
+        opacity: 0;;
+
+        display: none;
+    }
+    to{
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+.buttonpage{
+    animation: animatedLeft 2s;
+}
+
+h3{
+    animation: animatedLeft 2s; 
+}
+
 
     </style>
 </head>
@@ -175,7 +204,8 @@ button{
             <h3>
                 About my teaching
      </h3>
- 
+ <div class="buttonpage">
+
  
  <A HREF="termodynamika_fiz-stat_R_2023-24.pdf"> 
      <button><b>Termodynamika i fizyka statystyczna R 2023/24</b></button>
@@ -252,7 +282,7 @@ button{
   <A HREF="SPA_lectures.html"> 
      <button color="red"><b>● Lecture notes</b></button>
  </a>
- 
+</div>
      </div>
     </div>
 </body>

@@ -7,6 +7,11 @@
     <title>Kszysztow byczuk</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        html {
+overflow: hidden; 
+overflow-x: hidden; 
+overflow-y: hidden; 
+}
         body{
     margin: 0;
     background-color: rgb(225, 225, 225);
@@ -119,11 +124,11 @@ button:active{
 
 .info {
     display: none;
-    width: 40%;
+    width: 30%;
     height: 600px;
     background-color: rgb(159, 151, 151);
-    top: 5vh;
-    right: 120vh;
+    top: 20vh;
+    right: 70%;
     position: relative;
 
 }
@@ -142,8 +147,8 @@ button:active{
 .slideshow-container {
   width: 1800px;
   margin-top: 10vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 1000px;
   position: absolute;
   display: flex;
@@ -151,17 +156,12 @@ button:active{
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 8px 12px;
-  color: #0c4a6e;
-  position: relative;
-  bottom: 8px;
-  top: -92vh;
-  width: 100%;
-  text-align: center;
+    text-align: center;
+    margin-bottom: 3vh;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -189,8 +189,8 @@ button:active{
 }
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 45vh;
+  position:absolute;
+  top: 35vh;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -203,7 +203,7 @@ button:active{
 }
 
 .next{
-    margin-left: 68%;
+    margin-left: 74%;
 }
 .prev{
     left: -3%;
@@ -279,9 +279,10 @@ button:active{
 
                 <a href="https://www.fuw.edu.pl/~byczuk/publications.html" target="_blank">
                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                            <img src="img/publications.jpg" style="width:100%">
+                        <div class="numbertext">1 / 4</div>
                         <div class="text">arXiv And Selected Publications(CLICK ON PIC TO OPEN)</div>
+                            <img src="img/publications.jpg" style="width:100%">
+                        
                     </div>
                 </a>
                 <div class="info">
@@ -289,9 +290,10 @@ button:active{
                 </div>
                 <a href="https://www.fuw.edu.pl/~byczuk/research.html" target="_blank">
                     <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                            <img src="img/research.png" style="width:100%">
+                        <div class="numbertext">2 / 4</div>
                         <div class="text">Research(CLICK ON PIC TO OPEN)</div>
+                            <img src="img/research.png" style="width:100%">
+                        
                     </div>
                 </a>
                 <div class="info">
@@ -299,9 +301,10 @@ button:active{
                 </div>
                 <a href="https://www.fuw.edu.pl/~byczuk/talks.html" target="_blank">
                     <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                            <img src="img/talks.jpg" style="width:100%">
+                        <div class="numbertext">3 / 4</div>
                         <div class="text">Talks(CLICK ON PIC TO OPEN)</div>
+                            <img src="img/research.png" style="width:100%">
+                        
                     </div>
                 </a>
                 <div class="info">
@@ -310,8 +313,9 @@ button:active{
                 <a href="https://www.fuw.edu.pl/~byczuk/curriculum_byczuk.pdf" target="_blank">
                     <div class="mySlides fade">
                         <div class="numbertext">4 / 4</div>
-                            <img src="img/CV.png" style="width:100%">
                         <div class="text">CV + Publication List(CLICK ON PIC TO OPEN)</div>
+                            <img src="img/CV.png" style="width:100%">
+                        
                     </div>
                 </a>
                 <div class="info">
